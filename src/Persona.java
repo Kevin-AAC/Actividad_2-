@@ -48,7 +48,5 @@ public class Persona {
     public String toString() {
         return nombre + " " + apellido + " " + genero + " " + edad;
     }
-    public String getNombreYGenero() {
-        return nombre + " (" + genero + ")";
-    }
+
 }
