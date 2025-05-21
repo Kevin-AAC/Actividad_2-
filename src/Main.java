@@ -15,6 +15,7 @@ public class Main {
         PromedioEdad(Personas);
         PersonasGeneroMasculino(Personas);
         PersonasGeneroFemenino(Personas);
+
     }
     public static void CapturarDatos(ArrayList<Persona> personas){
         int i = 1;
@@ -48,22 +49,19 @@ public class Main {
         System.out.println("La edad promedio es :"+ promedio);
     }
     public static void PersonasGeneroMasculino(ArrayList<Persona> personas){
-        int cantiad = 0;
-        for (Persona p : personas){
-            if (p.getGenero().equalsIgnoreCase("masculino")){
-                cantiad++;
-            }
-        }
-        System.out.println("Cantidad de personas con género Masculino: "+cantiad);
+        PersonasPorGenero(personas, "masculino");
     }
     public static void PersonasGeneroFemenino(ArrayList<Persona> personas){
+        PersonasPorGenero(personas, "femenino");
+    }
+    public static void PersonasPorGenero(ArrayList<Persona> personas, String genero){
         int cantiad = 0;
         for (Persona p : personas){
-            if (p.getGenero().equalsIgnoreCase("femenino")){
+            if (p.getGenero().equalsIgnoreCase(genero)){
                 cantiad++;
             }
         }
-        System.out.println("Cantidad de personas con género Femenino: "+cantiad);
+        System.out.println("Cantidad de personas con género " + genero + ": " + cantiad);
     }
 
 
