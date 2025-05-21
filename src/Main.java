@@ -18,7 +18,7 @@ public class Main {
     }
     public static void CapturarDatos(ArrayList<Persona> personas){
         int i = 1;
-        while (i <= 2) {
+        while (i <= 5) {
             System.out.println("Ingresa tu nombre: ");
             String nombre = scanner.nextLine();
             System.out.println("Ingresa tu apellido: ");
@@ -39,10 +39,13 @@ public class Main {
         scanner.close();
     }
     public static void PromedioEdad(ArrayList<Persona> personas){
+        int sumaEdad = 0;
         for (Persona p : personas){
             int edad = p.getEdad();
-            System.out.println("edad: "+ edad );
+            sumaEdad += edad;
         }
+        int promedio = sumaEdad / personas.size();
+        System.out.println("La edad promedio es :"+ promedio);
     }
 
 
