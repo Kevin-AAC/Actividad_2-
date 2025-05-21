@@ -14,7 +14,7 @@ public class Main {
         CapturarDatos(Personas);
         PromedioEdad(Personas);
         PersonasGeneroMasculino(Personas);
-        PersonasGeneroFemenino(Personas)
+        PersonasGeneroFemenino(Personas);
     }
     public static void CapturarDatos(ArrayList<Persona> personas){
         int i = 1;
