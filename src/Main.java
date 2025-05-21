@@ -6,7 +6,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static Scanner scanner = new Scanner(System.in);
-    private List<Persona> Personas = new ArrayList<>();
+    static ArrayList<Persona> Personas = new ArrayList<>();
     // personas.add(new Persona(nombre, apellido, genero, edad));
     public static void main(String[] args) {
         //Persona[] personas = {new Persona("Juan", "Pérez", "Masculino", 25)};
@@ -22,10 +22,12 @@ public class Main {
             System.out.println("Ingresa tu edad: ");
             int edad = scanner.nextInt();
             scanner.nextLine();
-            System.out.println("Hola " + nombre + " " + apellido + ", género: " + genero + ", edad: " + edad);
-            System.out.println();
+            Personas.add(new Persona(nombre,apellido,genero,edad));
 
             i++;
+        }
+        for (int j = 0; j< Personas.size();j++){
+            System.out.println(Personas.get(j));
         }
         scanner.close();
     }
