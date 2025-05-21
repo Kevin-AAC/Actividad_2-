@@ -12,6 +12,8 @@ public class Persona {
         this.edad = edad;
     }
 
+
+
     public String getNombre() {
         return nombre;
     }
@@ -42,5 +44,11 @@ public class Persona {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+    public String toString() {
+        return nombre + " " + apellido + " " + genero + " " + edad;
+    }
+    public String getNombreYGenero() {
+        return nombre + " (" + genero + ")";
     }
 }
