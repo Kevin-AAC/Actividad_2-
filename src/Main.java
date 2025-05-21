@@ -47,7 +47,13 @@ public class Main {
         System.out.println("La edad promedio es :"+ promedio);
     }
     public static void PersonasGeneroMasculino(ArrayList<Persona> personas){
-        System.out.println("genero masculino");
+        int cantiad = 0;
+        for (Persona p : personas){
+            if (p.getGenero().equalsIgnoreCase("masculino")){
+                cantiad++;
+            }
+        }
+        System.out.println("Cantidad de personas con género Masculino: "+cantiad);
     }
 
 }
