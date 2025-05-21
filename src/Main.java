@@ -11,10 +11,9 @@ public class Main {
     public static void main(String[] args) {
         //Persona[] personas = {new Persona("Juan", "Pérez", "Masculino", 25)};
         //System.out.println(personas[0].getNombreYGenero());
-
-
         CapturarDatos(Personas);
         PromedioEdad(Personas);
+        PersonasGeneroMasculino(Personas);
     }
     public static void CapturarDatos(ArrayList<Persona> personas){
         int i = 1;
@@ -47,6 +46,8 @@ public class Main {
         int promedio = sumaEdad / personas.size();
         System.out.println("La edad promedio es :"+ promedio);
     }
-
+    public static void PersonasGeneroMasculino(ArrayList<Persona> personas){
+        System.out.println("genero masculino");
+    }
 
 }
