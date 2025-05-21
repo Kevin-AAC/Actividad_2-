@@ -27,7 +27,8 @@ public class Main {
             i++;
         }
         for (int j = 0; j< Personas.size();j++){
-            System.out.println(Personas.get(j));
+            Persona p = Personas.get(j);
+            System.out.println("Nombre: " + p.getNombre() + " Apellido: "+ p.getApellido() + " Genero: "+ p.getGenero());
         }
         scanner.close();
     }
