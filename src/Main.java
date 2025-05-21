@@ -55,5 +55,9 @@ public class Main {
         }
         System.out.println("Cantidad de personas con género Masculino: "+cantiad);
     }
+    public static void PersonasGeneroFemenino(ArrayList<Persona> personas){
+        System.out.println("Cantidad de personas con género Masculino:");
+    }
+
 
 }
