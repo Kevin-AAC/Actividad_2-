@@ -12,7 +12,7 @@ public class Main {
         //Persona[] personas = {new Persona("Juan", "Pérez", "Masculino", 25)};
         //System.out.println(personas[0].getNombreYGenero());
         int i = 1;
-        while (i <= 5) {
+        while (i <= 2) {
             System.out.println("Ingresa tu nombre: ");
             String nombre = scanner.nextLine();
             System.out.println("Ingresa tu apellido: ");
@@ -31,6 +31,14 @@ public class Main {
             System.out.println("Nombre: " + p.getNombre() + " Apellido: "+ p.getApellido() + " Genero: "+ p.getGenero());
         }
         scanner.close();
+        PromedioEdad(Personas);
+    }
+
+    public static void PromedioEdad(ArrayList<Persona> personas){
+        for (Persona p : personas){
+            int edad = p.getEdad();
+            System.out.println("edad: "+ edad );
+        }
     }
 
 
