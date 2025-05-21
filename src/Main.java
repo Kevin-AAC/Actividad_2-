@@ -55,13 +55,13 @@ public class Main {
         PersonasPorGenero(personas, "femenino");
     }
     public static void PersonasPorGenero(ArrayList<Persona> personas, String genero){
-        int cantiad = 0;
+        int cantidad = 0;
         for (Persona p : personas){
             if (p.getGenero().equalsIgnoreCase(genero)){
-                cantiad++;
+                cantidad++;
             }
         }
-        System.out.println("Cantidad de personas con género " + genero + ": " + cantiad);
+        System.out.println("Cantidad de personas con género " + genero + ": " + cantidad);
     }
 
 
