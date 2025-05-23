@@ -33,7 +33,7 @@ public class Main {
         }
         for (int j = 0; j< Personas.size();j++){
             Persona p = Personas.get(j);
-            System.out.println("Nombre: " + p.getNombre() + " Apellido: "+ p.getApellido() + " Genero: "+ p.getGenero());
+            System.out.println("Nombre: " + p.getNombre() +  " Genero: "+ p.getGenero());
         }
         scanner.close();
     }
